@@ -1,17 +1,56 @@
-# quiz_app
+# Quiz Master 🚀
 
-A new Flutter project.
+A polished, modern Flutter quiz application refactored with **Clean Architecture** and **Riverpod** for robust state management.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- **Modern UI/UX**: Clean, responsive design using `google_fonts` (Poppins & Montserrat).
+- **State Management**: Powered by `flutter_riverpod` using `StateNotifierProvider`.
+- **Clean Architecture**: Separated into `data`, `models`, `providers`, `screens`, and `widgets`.
+- **Custom Animations**: 
+  - Elastic transitions for dialogs and toasts.
+  - Animated progress bar and question switching.
+- **Interactive Feedback**: Real-time "Correct/Wrong" toasts that appear at the bottom for every selection.
+- **20 Questions**: Comprehensive coverage of Dart and Flutter fundamentals.
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Screenshots
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+<p align="center">
+  <img src="assets/images/quiz_screen.png" width="350" alt="Quiz Screen">
+  <img src="assets/images/result_dialog.png" width="350" alt="Result Dialog">
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Assets & Configuration
+
+The project assets are organized in the following directory:
+- `assets/images/`: Contains app screenshots and decorative assets.
+
+Registered in `pubspec.yaml`:
+```yaml
+flutter:
+  assets:
+    - assets/images/
+```
+
+## 📁 Project Structure
+
+```text
+lib/
+├── data/           # Quiz questions and static data
+├── models/         # Immutable data models
+├── providers/      # State management and business logic
+├── screens/        # UI Screens (Composition)
+├── widgets/        # Reusable UI components
+└── main.dart       # App entry point
+```
+
+## 🚀 Getting Started
+
+1. **Install dependencies**:
+   ```bash
+   flutter pub get
+   ```
+2. **Run the app**:
+   ```bash
+   flutter run
+   ```

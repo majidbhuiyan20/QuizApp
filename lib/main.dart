@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'home_screen.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(
@@ -17,10 +17,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Riverpod Quiz',
+      title: 'Quiz Master',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
         useMaterial3: true,
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: const Color(0xFF0D47A1),
       ),
       home: const HomeScreen(),
     );
